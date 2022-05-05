@@ -251,3 +251,31 @@ body {
   padding: 12px 85px;
   cursor: pointer;
 }
+.seafood-box {
+  background-image: url(../images/seafood-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 290px 0 95px 0;
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $colortext01;
+}
+.seafood-box__items {
+  display: flex;
+  justify-content: space-around;
+}
+.seafood-box__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 180px;
+  min-height: 165px;
+  background-image: url(../images/seashell.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
