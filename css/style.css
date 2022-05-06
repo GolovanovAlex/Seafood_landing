@@ -164,6 +164,13 @@ body {
   margin-left: 112px;
   -webkit-transform: translateY(-100px);
           transform: translateY(-100px);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header__content-btn:hover {
+  color: #001e64;
+  background-color: white;
 }
 
 .header__content-box {
@@ -292,7 +299,14 @@ body {
   border-radius: 20px;
   color: #001e64;
   padding: 12px 85px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   cursor: pointer;
+}
+
+.product__content-btn:hover {
+  color: #fff;
+  background-color: #001e64;
 }
 
 .seafood-box {
@@ -388,4 +402,86 @@ body {
   line-height: 24px;
   max-width: 628px;
   margin: 0 auto;
+}
+
+.contacts {
+  background-image: url(../images/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.contacts__box {
+  width: 390px;
+  background-color: #fff;
+  padding: 33px 0px 33px 20px;
+  margin-left: auto;
+}
+
+.contacts__box-text {
+  width: 200px;
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #001e64;
+  margin-bottom: 30px;
+}
+
+.contacts__box-list {
+  list-style: none;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.contacts__box-item {
+  margin-top: 30px;
+}
+.contacts__box-item span {
+  display: block;
+}
+
+.footer {
+  padding: 25px 0px 110px;
+}
+
+.footer_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0px 45px 0px 23px;
+}
+.footer_inner .menu {
+  padding-bottom: 32px;
+}
+.footer_inner .logo {
+  margin-left: 0;
+}
+
+.footer-social__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+}
+
+.footer-social__item + .footer-social__item {
+  margin-left: 10px;
+}
+
+.footer-social__link path {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer-social__link:hover path {
+  fill: #001e64;
 }
