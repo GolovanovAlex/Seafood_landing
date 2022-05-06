@@ -156,7 +156,7 @@ body {
 
 .header__content-box {
   display: flex;
-  margin-left: 100%;
+  justify-content: flex-end;
   margin-right: 30px;
   font-size: 18px;
   line-height: 21px;
@@ -400,3 +400,5 @@ body {
 .footer-social__link:hover path {
   fill: $colormain;
 }
+
+// media //
