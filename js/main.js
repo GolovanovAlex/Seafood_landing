@@ -6,6 +6,17 @@ $(function () {
     nextArrow:
       '<button type="button" class="slick-next"><img src="images/icon/next.svg" alt="next"></button>',
     vertical: true,
+    responsive: [
+      {
+        breakpoint: 361,
+        settings: {
+          dots: false,
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        },
+      },
+    ],
   });
 
   $(".product__name").slick({
@@ -26,5 +37,9 @@ $(function () {
     slidesToScroll: 1,
     fade: true,
     arrows: false,
+  });
+
+  $(".menu__btn").on("click", function () {
+    $(".menu__list").toggleClass("menu__list--active");
   });
 });
