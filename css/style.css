@@ -66,7 +66,7 @@ body {
 }
 
 .header__content {
-  background-image: url(../images/header-bg.png);
+  background-image: url(../images/bg/header-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -87,7 +87,9 @@ body {
 }
 
 .header-slider {
+  width: auto;
   max-width: 522px;
+  max-height: 400px;
   padding: 55px 0px 130px 112px;
 }
 .header-slider__text {
@@ -95,6 +97,11 @@ body {
   font-size: 18px;
   line-height: 22px;
   color: #fff;
+}
+
+.header-slider__item {
+  padding-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 .slick-prev,
@@ -311,8 +318,9 @@ body {
   background-color: #001e64;
 }
 
-.seafood-box {
-  background-image: url(../images/seafood-bg.jpg);
+.seafood-box,
+.seafood-box--phone {
+  background-image: url(../images/bg/seafood-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -345,10 +353,16 @@ body {
   text-align: center;
   width: 180px;
   min-height: 165px;
-  background-image: url(../images/seashell.svg);
+  background-image: url(../images/bg/seashell.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.seafood-box--phone {
+  display: none;
+  padding: 30px 0 30px 0;
+  background-image: url(../images/bg/seafoodmin-bg.jpg);
 }
 
 .seafood {
@@ -407,7 +421,7 @@ body {
 }
 
 .contacts {
-  background-image: url(../images/contact-bg.jpg);
+  background-image: url(../images/bg/contact-bg.jpg);
   background-repeat: no-repeat;
   background-position: bottom left;
 }
@@ -533,6 +547,8 @@ body {
 
   .seafood__item--right {
     padding-right: 0;
+  }
+  .seafood__item--right .seafood__item-content {
     padding-left: 20px;
   }
 }
@@ -695,6 +711,10 @@ body {
     display: none;
   }
 
+  .seafood-box--phone {
+    display: block;
+  }
+
   .seafood {
     padding: 50px 0;
   }
@@ -728,6 +748,10 @@ body {
 @media (max-width: 600px) {
   .product__content-box {
     display: block;
+    margin-top: -10px;
+  }
+  .product__content-box img {
+    margin: 0 auto;
   }
 
   .product__content-list {
