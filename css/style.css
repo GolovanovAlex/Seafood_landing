@@ -89,7 +89,6 @@ body {
 .header-slider {
   width: auto;
   max-width: 522px;
-  max-height: 400px;
   padding: 55px 0px 130px 112px;
 }
 .header-slider__text {
@@ -778,7 +777,7 @@ body {
 
   .header__content-btn {
     padding: 12px 55px;
-    margin-left: 50px;
+    margin-left: 55px;
   }
 
   .title__h1 {
@@ -791,8 +790,9 @@ body {
   }
 
   .product__content-btn {
+    display: block;
     padding: 12px 55px;
-    margin-left: 22px;
+    margin: 0 auto;
   }
 
   .product {
@@ -808,6 +808,10 @@ body {
     margin-left: 0;
   }
 
+  .header__content-btn {
+    margin-left: 45px;
+  }
+
   .menu__list {
     left: 10%;
     right: 10%;
@@ -816,10 +820,6 @@ body {
   .header-slider {
     padding-top: 0px;
     padding-left: 5px;
-  }
-
-  .header__content-btn {
-    margin-left: 20px;
   }
 
   .logo_img {
