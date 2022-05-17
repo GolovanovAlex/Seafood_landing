@@ -64,6 +64,8 @@ body {
   z-index: 10;
 }
 .menu__btn span {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   display: block;
   height: 4px;
   background-color: #001e64;
@@ -81,6 +83,18 @@ body {
 }
 .menu__btn span::after {
   bottom: 0;
+}
+.menu__btn.active span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.menu__btn.active span::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.menu__btn.active span::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .header__top {

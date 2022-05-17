@@ -1,5 +1,5 @@
 $(function () {
-  $(".header-slider").slick({
+  $('.header-slider').slick({
     dots: true,
     prevArrow:
       '<button type="button" class="slick-prev"><img src="images/icon/prev.svg" alt="previous"></button>',
@@ -19,8 +19,8 @@ $(function () {
     ],
   });
 
-  $(".product__name").slick({
-    asNavFor: ".product__content",
+  $('.product__name').slick({
+    asNavFor: '.product__content',
     slidesToShow: 4,
     slidesToScroll: 1,
     vertical: true,
@@ -53,15 +53,16 @@ $(function () {
       },
     ],
   });
-  $(".product__content").slick({
-    asNavFor: ".product__name",
+  $('.product__content').slick({
+    asNavFor: '.product__name',
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
     arrows: false,
   });
 
-  $(".menu__btn").on("click", function () {
-    $(".menu__list").toggleClass("menu__list--active");
+  $('.menu__btn').on('click', function () {
+    $('.menu__list').toggleClass('menu__list--active');
+    $('.menu__btn').toggleClass('active');
   });
 });

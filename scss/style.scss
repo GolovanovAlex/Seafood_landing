@@ -15,7 +15,7 @@ a {
   text-decoration: none;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -63,12 +63,13 @@ body {
     z-index: 10;
 
     span {
+      transition: all 0.3s ease;
       display: block;
       height: 4px;
       background-color: $colormain;
       &::after,
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         left: 0;
         right: 0;
@@ -80,6 +81,17 @@ body {
       }
       &::after {
         bottom: 0;
+      }
+    }
+    &.active {
+      span {
+        transform: rotate(45deg);
+        &::before {
+          transform: rotate(90deg);
+        }
+        &::after {
+          transform: rotate(90deg);
+        }
       }
     }
   }
@@ -102,7 +114,7 @@ body {
   &__content-btn {
     position: absolute;
     display: inline-block;
-    font-family: "Roboto Slab", serif;
+    font-family: 'Roboto Slab', serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
@@ -133,7 +145,7 @@ body {
 }
 .title {
   &__h1 {
-    font-family: "Roboto Slab", serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 72px;
     font-weight: 700;
     line-height: 95px;
@@ -197,7 +209,7 @@ body {
     opacity: 0.5;
 
     &::before {
-      content: "0";
+      content: '0';
     }
   }
 }
@@ -224,7 +236,7 @@ body {
   }
 
   &__name-item {
-    font-family: "Roboto Slab", serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
@@ -239,7 +251,7 @@ body {
     color: $colormain;
   }
   &__content-title {
-    font-family: "Roboto Slab", serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
@@ -252,7 +264,7 @@ body {
   }
   &__content-btn {
     display: inline-block;
-    font-family: "Roboto Slab", serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 24px;
     line-height: 32px;
     font-weight: 700;
@@ -313,7 +325,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   padding: 290px 0 95px 0;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -355,7 +367,7 @@ body {
   }
   &__item-title {
     max-width: 490px;
-    font-family: "Roboto Slab", serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 29px;
@@ -373,7 +385,7 @@ body {
   }
 
   &__blockquote-text {
-    font-family: "Roboto Slab", serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 18px;
     line-height: 24px;
     max-width: 628px;
@@ -401,7 +413,7 @@ body {
   }
   &__box-text {
     width: 200px;
-    font-family: "Roboto Slab", serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 18px;
     line-height: 24px;
     color: $colormain;
@@ -453,7 +465,6 @@ body {
 }
 
 // ---- ---- media 1160 ---- ---- //
-
 @media (max-width: 1160px) {
   .product__name {
     width: 350px;
@@ -465,9 +476,7 @@ body {
     }
   }
 }
-
 // ---- ---- media 1100 ---- ---- //
-
 @media (max-width: 1100px) {
   .seafood__item-content {
     padding-right: 20px;
@@ -479,9 +488,7 @@ body {
     }
   }
 }
-
 // ---- ---- media 1000 ---- ---- //
-
 @media (max-width: 1000px) {
   .menu {
     margin-top: 12px;
@@ -520,9 +527,7 @@ body {
     width: 250px;
   }
 }
-
 // ---- ---- media 950 ---- ---- //
-
 @media (max-width: 950px) {
   .seafood {
     img {
@@ -548,9 +553,7 @@ body {
     max-width: 100%;
   }
 }
-
 // ---- ---- media 890 ---- ---- //
-
 @media (max-width: 890px) {
   .product {
     &__inner {
@@ -593,9 +596,7 @@ body {
     }
   }
 }
-
 // ---- ---- media 745 ---- ---- //
-
 @media (max-width: 745px) {
   .title__h1 {
     font-size: 50px;
@@ -620,7 +621,6 @@ body {
   }
 }
 // ---- ---- media 650  ---- ---- //
-
 @media (max-width: 650px) {
   .product {
     &__content {
@@ -667,9 +667,7 @@ body {
     }
   }
 }
-
 // ---- ---- media 600 ---- ---- //
-
 @media (max-width: 600px) {
   .product__content-box {
     display: block;
@@ -682,18 +680,14 @@ body {
     width: 100%;
   }
 }
-
 // ---- ---- media 500 ---- ---- //
-
 @media (max-width: 500px) {
   .header-slider__text {
     font-size: 16px;
     margin-bottom: 15px;
   }
 }
-
 // ---- ---- media 470 ---- ---- //
-
 @media (max-width: 470px) {
   .header {
     &__content-btn {
@@ -736,9 +730,7 @@ body {
     }
   }
 }
-
 // ---- ---- media 360 ---- ---- //
-
 @media (max-width: 360px) {
   .header {
     &__content-btn {
