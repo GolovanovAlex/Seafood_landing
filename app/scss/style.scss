@@ -1,3 +1,9 @@
+// ---- ---- reset ---- ---- //
+@import 'slick.scss';
+@import 'jquery.fancybox.scss';
+@import 'normalize.scss';
+@import 'myreset.scss';
+
 // ---- ---- colors ---- ---- //
 $colormain: #001e64;
 $colortext01: #fff;
@@ -5,15 +11,6 @@ $colortext02: #232222;
 
 // ---- ----  ---- ---- //
 
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
